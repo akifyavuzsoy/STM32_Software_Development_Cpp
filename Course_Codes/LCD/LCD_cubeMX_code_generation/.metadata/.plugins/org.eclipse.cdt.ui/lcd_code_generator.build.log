@@ -1,0 +1,87 @@
+23:13:46 **** Incremental Build of configuration Debug for project lcd_code_generator ****
+make -j8 all 
+arm-none-eabi-g++ "../Core/Src/lcd.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/lcd.d" -MT"Core/Src/lcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/lcd.o"
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+In file included from ../Core/Src/lcd.cpp:8:
+../Core/Src/lcd.cpp: In function 'void lcd_write_command(Lcd_HandleTypeDef*, uint8_t)':
+../Core/Inc/lcd.h:57:25: error: invalid conversion from 'int' to 'GPIO_PinState' [-fpermissive]
+   57 | #define LCD_COMMAND_REG 0
+      |                         ^
+      |                         |
+      |                         int
+../Core/Src/lcd.cpp:125:47: note: in expansion of macro 'LCD_COMMAND_REG'
+  125 |  HAL_GPIO_WritePin(lcd->rs_port, lcd->rs_pin, LCD_COMMAND_REG);  // Write to command register
+      |                                               ^~~~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:278,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Core/Inc/lcd.h:11,
+                 from ../Core/Src/lcd.cpp:8:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:236:78: note:   initializing argument 3 of 'void HAL_GPIO_WritePin(GPIO_TypeDef*, uint16_t, GPIO_PinState)'
+  236 | void HAL_GPIO_WritePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState);
+      |                                                                ~~~~~~~~~~~~~~^~~~~~~~
+../Core/Src/main.cpp: In function 'int main()':
+../Core/Src/main.cpp:139:22: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  139 |     Lcd_string(&lcd, "4ilo");
+      |                      ^~~~~~
+In file included from ../Core/Src/lcd.cpp:8:
+../Core/Src/lcd.cpp: In function 'void lcd_write_data(Lcd_HandleTypeDef*, uint8_t)':
+../Core/Inc/lcd.h:56:22: error: invalid conversion from 'int' to 'GPIO_PinState' [-fpermissive]
+   56 | #define LCD_DATA_REG 1
+      |                      ^
+      |                      |
+      |                      int
+../Core/Src/lcd.cpp:144:47: note: in expansion of macro 'LCD_DATA_REG'
+  144 |  HAL_GPIO_WritePin(lcd->rs_port, lcd->rs_pin, LCD_DATA_REG);   // Write to data register
+      |                                               ^~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:278,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Core/Inc/lcd.h:11,
+                 from ../Core/Src/lcd.cpp:8:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:236:78: note:   initializing argument 3 of 'void HAL_GPIO_WritePin(GPIO_TypeDef*, uint16_t, GPIO_PinState)'
+  236 | void HAL_GPIO_WritePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState);
+      |                                                                ~~~~~~~~~~~~~~^~~~~~~~
+../Core/Src/lcd.cpp: In function 'void lcd_write(Lcd_HandleTypeDef*, uint8_t, uint8_t)':
+../Core/Src/lcd.cpp:165:70: error: invalid conversion from 'int' to 'GPIO_PinState' [-fpermissive]
+  165 |   HAL_GPIO_WritePin(lcd->data_port[i], lcd->data_pin[i], (data >> i) & 0x01);
+      |                                                          ~~~~~~~~~~~~^~~~~~
+      |                                                                      |
+      |                                                                      int
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:278,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Core/Inc/lcd.h:11,
+                 from ../Core/Src/lcd.cpp:8:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:236:78: note:   initializing argument 3 of 'void HAL_GPIO_WritePin(GPIO_TypeDef*, uint16_t, GPIO_PinState)'
+  236 | void HAL_GPIO_WritePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState);
+      |                                                                ~~~~~~~~~~~~~~^~~~~~~~
+../Core/Src/lcd.cpp:168:47: error: invalid conversion from 'int' to 'GPIO_PinState' [-fpermissive]
+  168 |  HAL_GPIO_WritePin(lcd->en_port, lcd->en_pin, 1);
+      |                                               ^
+      |                                               |
+      |                                               int
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:278,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Core/Inc/lcd.h:11,
+                 from ../Core/Src/lcd.cpp:8:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:236:78: note:   initializing argument 3 of 'void HAL_GPIO_WritePin(GPIO_TypeDef*, uint16_t, GPIO_PinState)'
+  236 | void HAL_GPIO_WritePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState);
+      |                                                                ~~~~~~~~~~~~~~^~~~~~~~
+../Core/Src/lcd.cpp:170:47: error: invalid conversion from 'int' to 'GPIO_PinState' [-fpermissive]
+  170 |  HAL_GPIO_WritePin(lcd->en_port, lcd->en_pin, 0);   // Data receive on falling edge
+      |                                               ^
+      |                                               |
+      |                                               int
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:278,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Core/Inc/lcd.h:11,
+                 from ../Core/Src/lcd.cpp:8:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:236:78: note:   initializing argument 3 of 'void HAL_GPIO_WritePin(GPIO_TypeDef*, uint16_t, GPIO_PinState)'
+  236 | void HAL_GPIO_WritePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState);
+      |                                                                ~~~~~~~~~~~~~~^~~~~~~~
+make: *** [Core/Src/subdir.mk:41: Core/Src/lcd.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+23:13:47 Build Failed. 7 errors, 1 warnings. (took 725ms)
+

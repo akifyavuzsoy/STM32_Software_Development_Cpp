@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;lcd_code_generator/Core/Inc/lcd.h&apos;" deleteContents="false" description="Delete resource &apos;lcd_code_generator/Core/Inc/lcd.h&apos;" element1="/lcd_code_generator/Core/Inc/lcd.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1719669867219"/>&#x0A;<refactoring comment="Delete resource &apos;lcd_code_generator/Core/Inc/lcd.cpp&apos;" deleteContents="false" description="Delete resource &apos;lcd_code_generator/Core/Inc/lcd.cpp&apos;" element1="/lcd_code_generator/Core/Inc/lcd.cpp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1719670050863"/>
+</session>

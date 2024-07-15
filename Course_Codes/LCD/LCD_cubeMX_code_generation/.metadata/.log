@@ -1,0 +1,81 @@
+!SESSION 2024-06-29 16:29:12.761 -----------------------------------------------
+eclipse.buildId=Version 1.7.0
+java.version=11.0.10
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=tr_TR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-06-29 16:30:19.499
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-06-29 16:30:19.566
+!MESSAGE Log4j initialized with config file C:\Users\ASUS\Desktop\Embedded_System_Projects\STM32_Software_Development_Cpp\Course_Codes\LCD\LCD_cubeMX_code_generation\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-06-29 16:30:42.027
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-06-29 16:32:36.098
+!MESSAGE Indexed 'lcd_code_generator' (36 sources, 100 headers) in 3.91 sec: 7,773 declarations; 48,811 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0035%)
+!SESSION 2024-07-09 23:00:20.573 -----------------------------------------------
+eclipse.buildId=Version 1.7.0
+java.version=11.0.10
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=tr_TR
+Framework arguments:  C:\Users\ASUS\Downloads\HD44780-Stm32HAL-master\HD44780-Stm32HAL-master\F4_disco_example\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\ASUS\Downloads\HD44780-Stm32HAL-master\HD44780-Stm32HAL-master\F4_disco_example\.cproject
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-07-09 23:00:33.156
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-07-09 23:00:44.866
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-07-09 23:00:44.943
+!MESSAGE Log4j initialized with config file C:\Users\ASUS\Desktop\Embedded_System_Projects\STM32_Software_Development_Cpp\Course_Codes\LCD\LCD_cubeMX_code_generation\.metadata\.log4j.xml
+
+!ENTRY org.eclipse.ui.workbench 4 2 2024-07-09 23:01:01.916
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: The application has not been initialized.
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:113)
+	at org.eclipse.core.internal.runtime.InternalPlatform.assertInitialized(InternalPlatform.java:139)
+	at org.eclipse.core.internal.runtime.InternalPlatform.getConfigurationLocation(InternalPlatform.java:267)
+	at org.eclipse.core.runtime.Platform.getConfigurationLocation(Platform.java:1342)
+	at com.st.stm32cube.ide.mcu.analytics.MCUAnalyticsPlugin.getPluginConfigurationLocation(MCUAnalyticsPlugin.java:64)
+	at com.st.stm32cube.ide.mcu.analytics.core.MCUAnalyticsStartup.getDialogSettingsFile(MCUAnalyticsStartup.java:158)
+	at com.st.stm32cube.ide.mcu.analytics.core.MCUAnalyticsStartup.getDialogSettings(MCUAnalyticsStartup.java:140)
+	at com.st.stm32cube.ide.mcu.analytics.core.MCUAnalyticsStartup.getAskAgainEndUserAgreement(MCUAnalyticsStartup.java:114)
+	at com.st.stm32cube.ide.mcu.analytics.core.MCUAnalyticsStartup.earlyStartup(MCUAnalyticsStartup.java:54)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2667)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-07-09 23:01:01.917
+!MESSAGE An internal error occurred during: "Executing the early startup extensions".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.core.internal.runtime.InternalPlatform.getLog(InternalPlatform.java:365)
+	at org.eclipse.core.runtime.Plugin.getLog(Plugin.java:237)
+	at org.eclipse.ui.internal.WorkbenchPlugin.log(WorkbenchPlugin.java:743)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.handleException(EarlyStartupRunnable.java:71)
+	at org.eclipse.core.runtime.SafeRunner.handleException(SafeRunner.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2667)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-07-09 23:03:09.271 -----------------------------------------------
+eclipse.buildId=Version 1.7.0
+java.version=11.0.10
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=tr_TR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-07-09 23:03:22.360
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-07-09 23:03:22.407
+!MESSAGE Log4j initialized with config file C:\Users\ASUS\Desktop\Embedded_System_Projects\STM32_Software_Development_Cpp\Course_Codes\LCD\LCD_cubeMX_code_generation\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-07-09 23:03:36.593
+!MESSAGE Started RMI Server, listening on port 41337
