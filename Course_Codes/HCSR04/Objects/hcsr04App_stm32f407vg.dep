@@ -1,6 +1,6 @@
 Dependencies for Project 'hcsr04App', Target 'stm32f407vg': (DO NOT MODIFY !)
-F (.\main.cpp)(0x66927F2D)(--cpp -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F407VGTx-I.\RTE\_stm32f407vg-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (hcsr04.h)(0x6692A16F)
+F (.\main.cpp)(0x66950495)(--cpp -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F407VGTx-I.\RTE\_stm32f407vg-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (hcsr04.h)(0x6694F79D)
 I (pinmap.h)(0x66800942)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x63749076)
 I (.\RTE\Device\STM32F407VGTx\stm32f4xx_hal_conf.h)(0x63775F9E)
@@ -30,9 +30,9 @@ I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\In
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x63749076)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x63749076)
 F (.\pinmap.h)(0x66800942)()
-F (.\hcsr04.h)(0x6692A16F)()
-F (.\hcsr04.cpp)(0x6692A3F5)(--cpp -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F407VGTx-I.\RTE\_stm32f407vg-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx-o .\objects\hcsr04.o --omf_browse .\objects\hcsr04.crf --depend .\objects\hcsr04.d)
-I (hcsr04.h)(0x6692A16F)
+F (.\hcsr04.h)(0x6694F79D)()
+F (.\hcsr04.cpp)(0x6694FEA2)(--cpp -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F407VGTx-I.\RTE\_stm32f407vg-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx-o .\objects\hcsr04.o --omf_browse .\objects\hcsr04.crf --depend .\objects\hcsr04.d)
+I (hcsr04.h)(0x6694F79D)
 I (pinmap.h)(0x66800942)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x63749076)
 I (.\RTE\Device\STM32F407VGTx\stm32f4xx_hal_conf.h)(0x63775F9E)
